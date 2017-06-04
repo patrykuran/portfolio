@@ -1,0 +1,263 @@
+$text-color: #615e5e
+$basic-font: 'Poppins', sans-serif
+$longer-text-font: 'Lato', sans-serif;
+$highlighted-words: salmon
+
+*
+	margin: 0
+
+body
+	font-size: 1.5em
+	color: $text-color
+	font-family: $basic-font
+
+.container
+	max-width: 1900px
+	margin: 50px 100px
+
+.hero
+	background-image: url("https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=")
+	min-height: 800px
+	height: 100vh
+	max-width: 1900px
+	background-size: cover
+	background-position:
+	background-repeat: no-repeat
+		
+	h1
+		font-size: 50px
+		font-weight: 700
+		margin-top: 100px
+		margin-left: 50px
+		max-width: 60%
+
+	span
+		color: $highlighted-words
+
+nav
+	width: 100%
+	padding-top: 40px
+
+	ul
+		display: flex
+		justify-content: flex-end
+
+		li
+			padding: 0 30px
+			list-style-type: none
+			cursor: pointer		
+			a
+				color: $text-color
+				text-decoration: none
+				display: inline-block
+				border-bottom: 2px solid transparent
+				height: 17px
+				transition: all ease-in-out .3s 
+				&:hover
+					border-color: $text-color
+				
+
+.row
+	width: 100%
+	height: 650px
+	display: flex
+	justify-content: center
+	align-items: center
+
+img
+	width: 100%
+	height: 520px
+	object-fit: cover
+
+hr
+	width: 150px
+	height: 3px
+	background-color: $highlighted-words
+	border: none
+	margin: 20px 0 80px
+
+
+.antek,
+.czarek,
+.color-game,
+.country-search-engine,
+.kanban-board,
+.patatap,
+.quote-machine,
+.rock-paper-scissors,
+.to-do-list
+	position: relative
+	text-align: center
+	// -webkit-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.4);
+	// -moz-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.4);
+	// box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.4);
+	// borer-radius: 3px
+	// margin: 20px
+
+	p
+		font-size: 15px
+		margin: 30px 0
+
+	.description
+			position: absolute
+			color: transparent
+			height: 520px
+			width: 100%
+			display: flex
+			top: 0
+			flex-direction: column
+			justify-content: center
+			opacity: 1
+			transition: .5s ease
+			&:hover
+				background: rgba(250, 128, 114, .9)
+				color: white
+				a
+					visibility: visible
+					transition: .3s ease
+					
+				
+			a
+				visibility: hidden
+				display: inline-block
+				color: white
+				border: 2px solid white
+				width: 120px
+				height: 30px
+				line-height: 30px
+				text-decoration: none
+				font-size: 15px
+				margin: 10px auto
+				border-radius: 8px
+				transition: .1s ease
+
+				&:hover
+					background-color: white
+					color: $highlighted-words
+			p
+				letter-spacing: 1px
+
+
+// .antek
+// 	align-self: flex-end
+
+// .czarek
+// 	align-self: flex-start
+
+// .country-search-engine
+// 	align-self: flex-end
+
+// .kanban-board
+// 	align-self: flex-start
+
+// .patatap
+// 	align-self: flex-end
+
+// .to-do-list
+// 	align-self: flex-start
+
+// .quote-machine
+// 	align-self: flex-end
+
+// .rock-paper-scissors
+// 	width: 800px
+
+
+.antek
+	width: 100%
+
+.kanban-board
+	width: 50%
+	margin-right: 12px
+
+.color-game
+	width: 50%
+	margin-left: 12px
+
+.czarek
+	width: 100%
+
+.country-search-engine
+	width: 50%
+	margin-right: 12px
+
+.quote-machine
+	width: 50%
+	margin-left: 12px
+
+.patatap
+	width: 100%
+
+.rock-paper-scissors
+	width: 65%
+	margin-right: 12px
+
+.to-do-list
+	width: 35%
+	margin-left: 12px
+
+.bio	
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	font-family: $longer-text-font
+	line-height: 30px
+	font-weight: 300
+	
+	.about,
+	.technologies
+		width: 100%
+	.about
+		text-align: left
+	.technologies
+		text-align: right
+
+	img
+		width: 300px
+		height: 300px
+		border-radius: 50%
+		border: 3px solid $highlighted-words
+		margin: 40px
+		align-self: center
+
+	h2
+		margin-bottom: 50px
+
+	p
+		font-size: 20px
+		margin: 20px 0
+
+	i
+		font-size: 55px
+		display: inline-block
+		margin: 10px
+
+	.devicon-swift-plain-wordmark
+			font-size: 75px
+			line-height: 50px
+
+.contact
+	display: flex
+	justify-content: space-between
+	a
+		color: $highlighted-words
+		text-decoration: none
+
+	.mail-phone
+		a
+			margin-bottom: 50px
+			display: inline-block
+		span
+			color: $highlighted-words
+
+	.social
+		align-self: flex-end
+		a
+			color: $text-color
+			font-size: 50px
+			margin: 10px
+			transition: ease .5s 
+			&:hover
+				color: $highlighted-words
+				
+
