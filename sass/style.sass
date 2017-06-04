@@ -13,7 +13,10 @@ body
 
 .container
 	max-width: 1900px
-	margin: 50px 100px
+	margin: 0 auto
+
+section
+	margin: 120px 100px
 
 .hero
 	background-image: url("https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=")
@@ -23,6 +26,7 @@ body
 	background-size: cover
 	background-position:
 	background-repeat: no-repeat
+	margin: 0 auto
 		
 	h1
 		font-size: 50px
@@ -63,10 +67,11 @@ nav
 	display: flex
 	justify-content: center
 	align-items: center
+	margin: 24px 0
 
 img
 	width: 100%
-	height: 520px
+	height: 650px
 	object-fit: cover
 
 hr
@@ -74,7 +79,7 @@ hr
 	height: 3px
 	background-color: $highlighted-words
 	border: none
-	margin: 20px 0 80px
+	margin: 20px 0 120px
 
 
 .antek,
@@ -92,8 +97,7 @@ hr
 	// -moz-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.4);
 	// box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.4);
 	// borer-radius: 3px
-	// margin: 20px
-
+	
 	p
 		font-size: 15px
 		margin: 30px 0
@@ -101,7 +105,7 @@ hr
 	.description
 			position: absolute
 			color: transparent
-			height: 520px
+			height: 650px
 			width: 100%
 			display: flex
 			top: 0
@@ -239,6 +243,7 @@ hr
 .contact
 	display: flex
 	justify-content: space-between
+
 	a
 		color: $highlighted-words
 		text-decoration: none
@@ -259,5 +264,6 @@ hr
 			transition: ease .5s 
 			&:hover
 				color: $highlighted-words
-				
+#contact
+	margin-bottom: 50px	
 
