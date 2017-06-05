@@ -13,26 +13,28 @@ body {
 section {
   margin: 120px 100px; }
 
-.hero {
+.jumbotron {
   background-image: url("https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
   min-height: 800px;
   height: 100vh;
   max-width: 1900px;
   background-size: cover;
+  background-position: 0 -40px;
   background-repeat: no-repeat;
   margin: 0 auto; }
-  .hero h1 {
+  .jumbotron h1 {
     font-size: 50px;
     font-weight: 700;
     margin-top: 100px;
     margin-left: 50px;
     max-width: 60%; }
-  .hero span {
+  .jumbotron span {
     color: salmon; }
 
 nav {
   width: 100%;
-  padding-top: 40px; }
+  border: 1px solid blue;
+  position: fixed; }
   nav ul {
     display: flex;
     justify-content: flex-end; }
@@ -49,6 +51,9 @@ nav {
         transition: all ease-in-out .3s; }
         nav ul li a:hover {
           border-color: #615e5e; }
+
+.jumbotron {
+  position: relative; }
 
 .row {
   width: 100%;
