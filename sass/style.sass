@@ -20,13 +20,13 @@ section
 
 .jumbotron
 	background-image: url("https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=")
-	min-height: 800px
 	height: 100vh
 	max-width: 1900px
 	background-size: cover
 	background-position: 0 -40px
 	background-repeat: no-repeat
 	margin: 0 auto
+	position: relative
 		
 	h1
 		font-size: 50px
@@ -40,8 +40,7 @@ section
 
 nav
 	width: 100%
-	border: 1px solid blue
-	position: fixed
+	padding-top: 40px
 
 	ul
 		display: flex
@@ -61,8 +60,29 @@ nav
 				&:hover
 					border-color: $text-color
 
-.jumbotron
-	position: relative
+
+
+
+.jumbotron-button
+	font-size: 40px
+	position: absolute
+	width: 60px
+	bottom: 20px
+	margin: 0 auto
+	right: 50%
+	left: 50%
+	animation: jump 1.9s infinite
+	&:hover
+	a
+		color: $highlighted-words
+		
+@keyframes jump
+	0%
+		transform: translateY(0)
+	50%
+		transform: translateY(10px)
+	100%
+ 		transform: translateY(0)
 
 .row
 	width: 100%
@@ -96,10 +116,6 @@ hr
 .to-do-list
 	position: relative
 	text-align: center
-	// -webkit-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.4);
-	// -moz-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.4);
-	// box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.4);
-	// borer-radius: 3px
 	
 	p
 		font-size: 15px
@@ -143,32 +159,6 @@ hr
 					color: $highlighted-words
 			p
 				letter-spacing: 1px
-
-
-// .antek
-// 	align-self: flex-end
-
-// .czarek
-// 	align-self: flex-start
-
-// .country-search-engine
-// 	align-self: flex-end
-
-// .kanban-board
-// 	align-self: flex-start
-
-// .patatap
-// 	align-self: flex-end
-
-// .to-do-list
-// 	align-self: flex-start
-
-// .quote-machine
-// 	align-self: flex-end
-
-// .rock-paper-scissors
-// 	width: 800px
-
 
 .antek
 	width: 100%
@@ -224,7 +214,7 @@ hr
 		height: 300px
 		border-radius: 50%
 		border: 3px solid $highlighted-words
-		margin: 40px
+		margin: 0 60px
 		align-self: center
 
 	h2
@@ -267,6 +257,4 @@ hr
 			transition: ease .5s 
 			&:hover
 				color: $highlighted-words
-#contact
-	margin-bottom: 50px	
 
