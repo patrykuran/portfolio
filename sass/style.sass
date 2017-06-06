@@ -209,12 +209,12 @@ section
 
 // end navigation
 
+// jumbotron //
 
 .jumbotron
 	background-image: url("https://images.pexels.com/photos/24324/pexels-photo.jpg?w=1900&h=auto&auto=compress&cs=tinysrgb")
 	height: 100vh
 	max-width: 1900px
-	background-size: 
 	background-position: center
 	background-repeat: no-repeat
 	margin: 0 auto
@@ -252,9 +252,6 @@ nav
 				&:hover
 					border-color: $text-color
 
-
-
-
 .jumbotron-button
 	font-size: 40px
 	position: absolute
@@ -275,6 +272,8 @@ nav
 		transform: translateY(10px)
 	100%
  		transform: translateY(0)
+
+// works section //
 
 .row
 	width: 100%
@@ -385,6 +384,8 @@ hr
 	width: 35%
 	margin-left: 12px
 
+// bio section //
+
 .bio	
 	display: flex
 	justify-content: center
@@ -451,3 +452,53 @@ hr
 			&:hover
 				color: $highlighted-words
 
+// media queries //
+@media(max-width: 425px)
+	section
+		margin: 80px 60px
+
+@media(max-width: 1024px) and (min-width: 426px)
+
+	section
+		margin: 100px 60px
+
+	.jumbotron
+		h1
+			font-size: 25px
+
+	.row
+		flex-direction: column
+		align-items: baseline
+		height: auto
+	.antek,
+	.czarek,
+	.color-game,
+	.country-search-engine,
+	.kanban-board,
+	.patatap,
+	.quote-machine,
+	.rock-paper-scissors,
+	.to-do-list
+		width: 100%
+		margin: 0
+
+	.color-game,
+	.quote-machine,
+	.to-do-list
+		margin-top: 24px
+
+	.bio
+		flex-direction: column
+
+		.about,
+		.technologies
+			text-align: center
+
+		img
+			margin: 50px 0
+	
+
+@media(max-width: 1440px) and (min-width: 1025px)
+	.jumbotron
+		h1
+			font-size: 37px

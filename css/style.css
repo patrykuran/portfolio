@@ -438,4 +438,44 @@ hr {
       .contact .social a:hover {
         color: salmon; }
 
+@media (max-width: 425px) {
+  section {
+    margin: 80px 60px; } }
+
+@media (max-width: 1024px) and (min-width: 426px) {
+  section {
+    margin: 100px 60px; }
+  .jumbotron h1 {
+    font-size: 25px; }
+  .row {
+    flex-direction: column;
+    align-items: baseline;
+    height: auto; }
+  .antek,
+  .czarek,
+  .color-game,
+  .country-search-engine,
+  .kanban-board,
+  .patatap,
+  .quote-machine,
+  .rock-paper-scissors,
+  .to-do-list {
+    width: 100%;
+    margin: 0; }
+  .color-game,
+  .quote-machine,
+  .to-do-list {
+    margin-top: 24px; }
+  .bio {
+    flex-direction: column; }
+    .bio .about,
+    .bio .technologies {
+      text-align: center; }
+    .bio img {
+      margin: 50px 0; } }
+
+@media (max-width: 1440px) and (min-width: 1025px) {
+  .jumbotron h1 {
+    font-size: 37px; } }
+
 /*# sourceMappingURL=style.css.map */
