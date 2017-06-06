@@ -8,6 +8,7 @@ $('#toggle').click(function() {
 });
 
 $("li").click(function() {
-	$('#toggle').removeClass('active');
+	$('#toggle').toggleClass('active');
+   	$('#overlay').toggleClass('open');
 	console.log("you clicked li");
 });
