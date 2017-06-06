@@ -17,7 +17,7 @@
 </head>
 <body>
 	<div data-aos="fade-up">
-		<div class="jumbotron">
+		<div id="home" class="jumbotron">
 			<!-- navigation -->
 			<!-- <nav>
 				<ul>
@@ -36,15 +36,16 @@
 				<div class="overlay" id="overlay">
 					<nav class="overlay-menu">
 						<ul>
-							<li ><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Work</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a a onclick="$('#home').animatescroll();" href="#home">home</a></li>
+							<li><a a onclick="$('#works').animatescroll();" href="#works">works</a></li>
+							<li><a a onclick="$('#bio').animatescroll();" href="#bio">bio</a></li>
+							<li><a a onclick="$('#contact').animatescroll();" href="#contact">contact</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 			<a href='https://codepen.io/PaulVanO/pen/GgGeyE'>link do nowego navbar</a>
+			<a href="http://glitchbone.github.io/jquery-fatNav/#">Inne menu</a>
 			<!-- jumbotron -->
 			<div data-aos="fade-up" id="jumbotron">
 				<h1>Hello! I'm <span>Patryk Uran</span>.
@@ -113,7 +114,7 @@
 				<div class="row">
 					<!-- country-search-engine -->
 					<div data-aos="fade-up" class="country-search-engine">
-						<img src="images/country-search-engine.PNG" alt="country search engine">
+						<img src="images/country-search-engine.png" alt="country search engine">
 						<div class="description">
 							<h2>Country Search Engine</h2>
 							<p>Check some info about a chosen country</p>
@@ -124,7 +125,7 @@
 
 					<!-- quote machine -->
 					<div data-aos="fade-down" class="quote-machine">
-						<img src="images/quote-machine.PNG" alt="quote machine">
+						<img src="images/random-quote-machine.png" alt="quote machine">
 						<div class="description">
 							<h2>Quote Machine</h2>
 							<p>Random design quote of the day - get inspired!</p>
@@ -207,7 +208,7 @@
 		</section>
 
 		<!-- contact section -->
-		<section>
+		<section id="contact">
 			<div class="container">
 				<div data-aos="fade-right">
 					<h2>Contact</h2>

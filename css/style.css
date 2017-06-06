@@ -19,11 +19,12 @@ section {
     display: inline-block;
     position: relative;
     text-align: center;
-    color: #615e5e;
+    color: salmon;
     text-decoration: none;
-    font-size: 20px;
     overflow: hidden;
-    top: 5px; }
+    top: 5px;
+    height: auto;
+    font-family: "Poppins", sans-serif; }
     .new-navigation a:after {
       content: '';
       position: absolute;
@@ -36,10 +37,6 @@ section {
       transition: .35s ease; }
     .new-navigation a:hover:after {
       width: 100%; }
-  .new-navigation h1 {
-    position: relative;
-    text-align: center;
-    font-family: 'Vollkorn', sans-serif; }
   .new-navigation .button_container {
     position: fixed;
     top: 5%;
@@ -125,8 +122,7 @@ section {
       top: 50%;
       transform: translateY(-50%);
       font-size: 50px;
-      font-family: 'Vollkorn', serif;
-      font-weight: 400;
+      font-family: "Poppins", sans-serif;
       text-align: center;
       z-index: 100; }
     .new-navigation .overlay ul {
@@ -146,7 +142,7 @@ section {
         .new-navigation .overlay ul li a {
           display: block;
           position: relative;
-          color: #FFF;
+          color: salmon;
           text-decoration: none;
           overflow: hidden; }
           .new-navigation .overlay ul li a:hover:after, .new-navigation .overlay ul li a:focus:after, .new-navigation .overlay ul li a:active:after {
@@ -154,13 +150,13 @@ section {
           .new-navigation .overlay ul li a:after {
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: 40px;
             left: 50%;
             width: 0%;
             transform: translateX(-50%);
             height: 3px;
             background: #FFF;
-            transition: .35s; }
+            transition: .5s; }
 
 @keyframes fadeInRight {
   0% {
@@ -298,7 +294,7 @@ hr {
     .rock-paper-scissors .description:hover,
     .to-do-list .description:hover {
       background: rgba(250, 128, 114, 0.9);
-      color: white; }
+      color: #FFF; }
       .antek .description:hover a,
       .czarek .description:hover a,
       .color-game .description:hover a,
@@ -321,8 +317,8 @@ hr {
     .to-do-list .description a {
       visibility: hidden;
       display: inline-block;
-      color: white;
-      border: 2px solid white;
+      color: #FFF;
+      border: 2px solid #FFF;
       width: 120px;
       height: 30px;
       line-height: 30px;
@@ -340,7 +336,7 @@ hr {
       .quote-machine .description a:hover,
       .rock-paper-scissors .description a:hover,
       .to-do-list .description a:hover {
-        background-color: white;
+        background-color: #FFF;
         color: salmon; }
     .antek .description p,
     .czarek .description p,
