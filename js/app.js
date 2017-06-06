@@ -10,5 +10,10 @@ $('#toggle').click(function() {
 $("li").click(function() {
 	$('#toggle').toggleClass('active');
    	$('#overlay').toggleClass('open');
-	console.log("you clicked li");
+});
+
+$("#overlay").click(function() {
+	$('#toggle').toggleClass('active');
+   	$('#overlay').toggleClass('open');
+	console.log("you clicked overlay");
 });
