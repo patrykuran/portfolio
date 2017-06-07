@@ -253,8 +253,6 @@ nav
 					border-color: $text-color
 
 
-
-
 .jumbotron-button
 	font-size: 40px
 	position: absolute
@@ -275,6 +273,8 @@ nav
 		transform: translateY(10px)
 	100%
  		transform: translateY(0)
+
+/* WORKS SECTION */
 
 .row
 	width: 100%
@@ -327,15 +327,15 @@ hr
 				background: rgba(250, 128, 114, .9)
 				color: $color-link
 				a
-					visibility: visible
+					color: $color-link
 					transition: .3s ease
+					border: 2px solid $color-link
 					
 				
 			a
-				visibility: hidden
 				display: inline-block
-				color: $color-link
-				border: 2px solid $color-link
+				color: transparent
+				border: 2px solid transparent
 				width: 120px
 				height: 30px
 				line-height: 30px
@@ -384,6 +384,8 @@ hr
 	width: 35%
 	margin-left: 12px
 
+/* BIO SECTION */
+
 .bio	
 	display: flex
 	justify-content: center
@@ -425,6 +427,8 @@ hr
 			font-size: 75px
 			line-height: 50px
 
+/* contact section */
+
 .contact
 	display: flex
 	justify-content: space-between
@@ -461,7 +465,7 @@ hr
 		justify-content: center
 		align-items: center
 		flex-direction: column
-
+	
 	.antek,
 	.czarek,
 	.color-game,
@@ -473,6 +477,19 @@ hr
 	.to-do-list
 		margin: 0
 		width: 100%
+		
+		.description
+				background-color: rgba(97, 94, 94, 0.9)
+				
+				h2,
+				p
+					color: $color-link
+					padding: 0 50px
+
+				a
+					color: $color-link
+					border-color: $color-link
+
 
 	.kanban-board,
 	.country-search-engine,
@@ -492,3 +509,5 @@ hr
 
 		img
 			margin: 30px 0
+
+	

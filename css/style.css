@@ -223,6 +223,7 @@ nav {
   100% {
     transform: translateY(0); } }
 
+/* WORKS SECTION */
 .row {
   width: 100%;
   display: flex;
@@ -303,8 +304,9 @@ hr {
       .quote-machine .description:hover a,
       .rock-paper-scissors .description:hover a,
       .to-do-list .description:hover a {
-        visibility: visible;
-        transition: .3s ease; }
+        color: #FFF;
+        transition: .3s ease;
+        border: 2px solid #FFF; }
     .antek .description a,
     .czarek .description a,
     .color-game .description a,
@@ -314,10 +316,9 @@ hr {
     .quote-machine .description a,
     .rock-paper-scissors .description a,
     .to-do-list .description a {
-      visibility: hidden;
       display: inline-block;
-      color: #FFF;
-      border: 2px solid #FFF;
+      color: transparent;
+      border: 2px solid transparent;
       width: 120px;
       height: 30px;
       line-height: 30px;
@@ -381,6 +382,7 @@ hr {
   width: 35%;
   margin-left: 12px; }
 
+/* BIO SECTION */
 .bio {
   display: flex;
   justify-content: center;
@@ -416,6 +418,7 @@ hr {
     font-size: 75px;
     line-height: 50px; }
 
+/* contact section */
 .contact {
   display: flex;
   justify-content: space-between; }
@@ -457,6 +460,47 @@ hr {
   .to-do-list {
     margin: 0;
     width: 100%; }
+    .antek .description,
+    .czarek .description,
+    .color-game .description,
+    .country-search-engine .description,
+    .kanban-board .description,
+    .patatap .description,
+    .quote-machine .description,
+    .rock-paper-scissors .description,
+    .to-do-list .description {
+      background-color: rgba(97, 94, 94, 0.9); }
+      .antek .description h2,
+      .antek .description p,
+      .czarek .description h2,
+      .czarek .description p,
+      .color-game .description h2,
+      .color-game .description p,
+      .country-search-engine .description h2,
+      .country-search-engine .description p,
+      .kanban-board .description h2,
+      .kanban-board .description p,
+      .patatap .description h2,
+      .patatap .description p,
+      .quote-machine .description h2,
+      .quote-machine .description p,
+      .rock-paper-scissors .description h2,
+      .rock-paper-scissors .description p,
+      .to-do-list .description h2,
+      .to-do-list .description p {
+        color: #FFF;
+        padding: 0 50px; }
+      .antek .description a,
+      .czarek .description a,
+      .color-game .description a,
+      .country-search-engine .description a,
+      .kanban-board .description a,
+      .patatap .description a,
+      .quote-machine .description a,
+      .rock-paper-scissors .description a,
+      .to-do-list .description a {
+        color: #FFF;
+        border-color: #FFF; }
   .kanban-board,
   .country-search-engine,
   .rock-paper-scissors {
