@@ -516,4 +516,58 @@ hr {
     .bio img {
       margin: 30px 0; } }
 
+/*MEDIA SMARTPHONES*/
+@media (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 30px;
+    margin-top: 8%; }
+  section {
+    margin: 0 8px; }
+  img {
+    height: 300px; }
+  .antek .description,
+  .czarek .description,
+  .color-game .description,
+  .country-search-engine .description,
+  .kanban-board .description,
+  .patatap .description,
+  .quote-machine .description,
+  .rock-paper-scissors .description,
+  .to-do-list .description {
+    height: 300px; }
+    .antek .description h2,
+    .czarek .description h2,
+    .color-game .description h2,
+    .country-search-engine .description h2,
+    .kanban-board .description h2,
+    .patatap .description h2,
+    .quote-machine .description h2,
+    .rock-paper-scissors .description h2,
+    .to-do-list .description h2 {
+      font-size: 22px; }
+    .antek .description p,
+    .czarek .description p,
+    .color-game .description p,
+    .country-search-engine .description p,
+    .kanban-board .description p,
+    .patatap .description p,
+    .quote-machine .description p,
+    .rock-paper-scissors .description p,
+    .to-do-list .description p {
+      font-size: 12px; }
+    .antek .description a,
+    .czarek .description a,
+    .color-game .description a,
+    .country-search-engine .description a,
+    .kanban-board .description a,
+    .patatap .description a,
+    .quote-machine .description a,
+    .rock-paper-scissors .description a,
+    .to-do-list .description a {
+      font-size: 12px; }
+  /* to fo: fix contact display */
+  .contact {
+    display: flex;
+    flex-direction: column; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -479,16 +479,16 @@ hr
 		width: 100%
 		
 		.description
-				background-color: rgba(97, 94, 94, 0.9)
+			background-color: rgba(97, 94, 94, 0.9)
 				
-				h2,
-				p
-					color: $color-link
-					padding: 0 50px
+			h2,
+			p
+				color: $color-link
+				padding: 0 50px
 
-				a
-					color: $color-link
-					border-color: $color-link
+			a
+				color: $color-link
+				border-color: $color-link
 
 
 	.kanban-board,
@@ -510,4 +510,42 @@ hr
 		img
 			margin: 30px 0
 
+/*MEDIA SMARTPHONES*/
+
+@media(max-width: 768px)
 	
+	.jumbotron
+	
+		h1
+			font-size: 30px
+			margin-top: 8%
+	section
+		margin: 0 8px
+
+	img
+		height: 300px
+	
+	.antek,
+	.czarek,
+	.color-game,
+	.country-search-engine,
+	.kanban-board,
+	.patatap,
+	.quote-machine,
+	.rock-paper-scissors,
+	.to-do-list
+		.description
+			height: 300px
+
+			h2
+				font-size: 22px
+			p
+				font-size: 12px
+			a
+				font-size: 12px
+
+	/* to fo: fix contact display */
+
+	.contact
+		display: flex
+		flex-direction: column
