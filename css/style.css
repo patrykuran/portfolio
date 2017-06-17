@@ -434,11 +434,13 @@ hr {
     align-self: flex-end; }
     .contact .social a {
       color: #615e5e;
-      font-size: 50px;
-      margin: 10px;
+      font-size: 3.2em;
+      margin: 20px;
       transition: ease .5s; }
       .contact .social a:hover {
         color: salmon; }
+      .contact .social a .fa {
+        vertical-align: bottom; }
 
 /* MEDIA LAPTOPS */
 @media (max-width: 1366px) {
