@@ -441,6 +441,9 @@ hr {
         color: salmon; }
       .contact .social a .fa {
         vertical-align: bottom; }
+    .contact .social .fa-file-text {
+      margin-bottom: 5px;
+      font-size: 67px; }
 
 /* MEDIA LAPTOPS */
 @media (max-width: 1366px) {
